@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="131" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Player Controller-->
         <scene sceneID="yOw-VP-7l4">
             <objects>
-                <viewController id="rmZ-Oz-dXy" customClass="ViewController" customModule="DeathCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rmZ-Oz-dXy" customClass="setPlayerController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0bu-gG-dH1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,10 +110,10 @@ If the accumulated points exceed the number, the player loses the game.</string>
             </objects>
             <point key="canvasLocation" x="951.90839694656484" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Result Controller-->
         <scene sceneID="z5O-c2-PVb">
             <objects>
-                <viewController id="dkd-0f-NbN" customClass="ViewController" customModule="DeathCode" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dkd-0f-NbN" customClass="resultController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5kl-rM-UNF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,6 +182,12 @@ If the accumulated points exceed the number, the player loses the game.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNK-66-J6a">
+                                <rect key="frame" x="159" y="351" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iQm-o5-JMV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -199,6 +205,33 @@ If the accumulated points exceed the number, the player loses the game.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3g-Ks-3oY" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1776.3358778625955" y="-27.464788732394368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GsR-Nt-wDC">
+            <objects>
+                <viewController id="E9b-mC-aXx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SGe-yW-vaA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUY-cc-EAl">
+                                <rect key="frame" x="0.0" y="142" width="393" height="710"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dGO-Y0-hs7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y4j-F1-YAB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ego-QZ-YKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2583.969465648855" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
