@@ -16,31 +16,129 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cover" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="js5-gm-X5q">
-                                <rect key="frame" x="135" y="276" width="126" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe3-zv-6Ko">
                                 <rect key="frame" x="143" y="567" width="108" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="tap to start"/>
                                 <connections>
-                                    <segue destination="r5a-is-ChY" kind="show" id="3WK-dy-JKP"/>
+                                    <segue destination="YT1-qM-V5C" kind="show" id="3lB-hS-qXp"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dUb-PA-cGg">
+                                <rect key="frame" x="16" y="117" width="342" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.9137254901960784" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.92941176889999999" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q6b-FG-PlD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-1274" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cbc-yq-SaC">
+            <objects>
+                <viewController id="YT1-qM-V5C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eeM-Yx-dat">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="note01" translatesAutoresizingMaskIntoConstraints="NO" id="1fc-Jd-6mb">
+                                <rect key="frame" x="25" y="150" width="342" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.91372549020000005" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufA-iH-Qul">
+                                <rect key="frame" x="25" y="673" width="342" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="VaO-1E-ctS" kind="show" id="rHO-Sr-Uhh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="來場猜數字遊戲，輸的人得喝一杯啤酒！" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-Hi-XOT">
+                                <rect key="frame" x="47" y="433" width="297" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XjZ-vN-jy4">
+                                <rect key="frame" x="60" y="114" width="273" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lj3-WV-JIl"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.92941176889999999" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ixZ-h9-4Ia"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9iY-hi-r8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434.35114503816794" y="-27.464788732394368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="plZ-VD-fhx">
+            <objects>
+                <viewController id="VaO-1E-ctS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQ3-RM-yhL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="note02" translatesAutoresizingMaskIntoConstraints="NO" id="e2V-eX-bdi">
+                                <rect key="frame" x="25" y="162" width="342" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.91372549020000005" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWn-Gg-myU">
+                                <rect key="frame" x="60" y="114" width="273" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="在確認遊戲人數後，玩家會收到一個終極密碼。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vsw-3L-nBX">
+                                <rect key="frame" x="25" y="434" width="342" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04R-bi-7fI">
+                                <rect key="frame" x="25" y="670" width="342" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="F13-DK-bWP" kind="show" id="tKN-pj-qtv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Og-cz-avF"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.92941176889999999" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i2E-hX-XQw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xNm-n9-2uj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="-27"/>
         </scene>
         <!--Setplayer View Controller-->
         <scene sceneID="gFo-hP-yRm">
@@ -50,55 +148,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="huM-X8-3M6">
-                                <rect key="frame" x="17.985074626860296" y="50.999999999992042" width="356" height="475.99999999999989"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Welcome to Death Code. At the beginning of the game, the number of players will be selected. According to the size of the number of players, players will get a mysterious number.
-
-Players can choose to get points by shaking the phone from 1 to 3 dice.
-
-If the accumulated points exceed the number, the player loses the game.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1d-MT-raY">
-                                <rect key="frame" x="29.302238805959178" y="613.999999999951" width="331.00000000000023" height="60"/>
+                                <rect key="frame" x="31" y="480" width="331" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="6-10 Player">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <backgroundConfiguration key="background" cornerRadius="20" image="btn02"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="randomB:" destination="r5a-is-ChY" eventType="touchUpInside" id="Yvv-UI-v0O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0N-7T-uww">
-                                <rect key="frame" x="29.302238805959178" y="690.99999999994509" width="331.00000000000023" height="66.999999999999886"/>
+                                <rect key="frame" x="31" y="670" width="331" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Play Game">
+                                <buttonConfiguration key="configuration" style="filled" title="開始遊戲">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="WVE-vY-gaf" kind="show" destinationCreationSelector="showNumber:" id="wlY-ic-5WJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucJ-WU-3OR">
-                                <rect key="frame" x="29" y="534" width="331.00000000007094" height="59.999999999987153"/>
+                                <rect key="frame" x="30" y="283" width="331" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="1-5 Player">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <backgroundConfiguration key="background" cornerRadius="20" image="btn01"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="randomA:" destination="r5a-is-ChY" eventType="touchUpInside" id="jHq-28-8FK"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="請選擇遊戲人數" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2jC-gJ-Ocr">
+                                <rect key="frame" x="24" y="114" width="342" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZG2-J4-WJK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.92941176889999999" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="i3D-qD-Q8c"/>
                     <connections>
@@ -109,7 +203,7 @@ If the accumulated points exceed the number, the player loses the game.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUk-JQ-sGe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869.4656488549617" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="2974.8091603053435" y="-27.464788732394368"/>
         </scene>
         <!--Gameinf View Controller-->
         <scene sceneID="XVP-HM-Z7v">
@@ -125,6 +219,7 @@ If the accumulated points exceed the number, the player loses the game.</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" cornerRadius="20" image="1dice" imageContentMode="scaleAspectFill" strokeWidth="1">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
@@ -138,6 +233,7 @@ If the accumulated points exceed the number, the player loses the game.</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" cornerRadius="20" image="2dice" imageContentMode="scaleAspectFill">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
@@ -151,6 +247,7 @@ If the accumulated points exceed the number, the player loses the game.</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <backgroundConfiguration key="background" cornerRadius="20" image="3dice" imageContentMode="scaleAspectFill">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
@@ -161,30 +258,30 @@ If the accumulated points exceed the number, the player loses the game.</string>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7D-2I-HQv">
                                 <rect key="frame" x="21" y="704" width="351" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Play again">
+                                <buttonConfiguration key="configuration" style="filled" title="再玩一次">
+                                    <backgroundConfiguration key="background"/>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="playAgain:" destination="WVE-vY-gaf" eventType="touchUpInside" id="Bft-MY-Cro"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huJ-0X-mzK">
-                                <rect key="frame" x="19" y="464" width="356" height="74"/>
+                                <rect key="frame" x="21" y="488" width="356" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaj-FM-Gp8">
-                                <rect key="frame" x="25" y="312" width="341" height="144"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="losse" translatesAutoresizingMaskIntoConstraints="NO" id="n3d-yW-MU3">
+                                <rect key="frame" x="0.0" y="232" width="393" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfC-iP-hxp">
-                                <rect key="frame" x="9" y="114" width="377" height="205"/>
+                                <rect key="frame" x="8" y="88" width="377" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
@@ -192,13 +289,13 @@ If the accumulated points exceed the number, the player loses the game.</string>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ylo-n4-CiU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.92941176889999999" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="yI4-nS-I0c"/>
                     <connections>
                         <outlet property="MSG" destination="huJ-0X-mzK" id="VgU-yh-tNe"/>
+                        <outlet property="beerPic" destination="n3d-yW-MU3" id="VOa-1d-Zyb"/>
                         <outlet property="codeInf" destination="XfC-iP-hxp" id="vJN-fA-bpn"/>
-                        <outlet property="gameResultMSG" destination="xaj-FM-Gp8" id="2fg-HD-MKC"/>
                         <outlet property="oneDice" destination="e6C-Fj-l09" id="pCG-ga-5gM"/>
                         <outlet property="playagain" destination="Z7D-2I-HQv" id="auc-PI-N8x"/>
                         <outlet property="threeDice" destination="SMt-v1-Hiu" id="Kwx-ho-rRk"/>
@@ -207,7 +304,7 @@ If the accumulated points exceed the number, the player loses the game.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVg-TM-bVz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2707.6335877862593" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="3812.9770992366412" y="-27.464788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nsm-Cs-Chc">
@@ -225,18 +322,126 @@ If the accumulated points exceed the number, the player loses the game.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFX-mq-6ck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="-2173" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tdJ-kg-Iqq">
+            <objects>
+                <viewController id="F13-DK-bWP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FdV-4c-qnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="note03" translatesAutoresizingMaskIntoConstraints="NO" id="Jio-Xr-Ax3">
+                                <rect key="frame" x="25" y="162" width="342" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.91372549020000005" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hK9-AT-SI9">
+                                <rect key="frame" x="60" y="114" width="273" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="運用策略，選擇一個到三個骰子，來累積點數。" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hxg-ZT-RB0">
+                                <rect key="frame" x="25" y="434" width="342" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oG-hy-mid">
+                                <rect key="frame" x="25" y="670" width="342" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nrh-Qj-1Ru" kind="show" id="RNe-4l-W6f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZLu-Az-YVy"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.92941176889999999" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MFs-dJ-uba"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y40-vW-Ccc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1300" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4Uj-Fo-jgi">
+            <objects>
+                <viewController id="nrh-Qj-1Ru" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xng-nK-4OO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="note3" translatesAutoresizingMaskIntoConstraints="NO" id="dtf-k4-jmy">
+                                <rect key="frame" x="25" y="162" width="342" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.91372549020000005" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCy-M8-7kP">
+                                <rect key="frame" x="60" y="114" width="273" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="透過搖晃手機來取得點數，刷新後，將手機給下一個玩家，祝大家好運！" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7FF-dI-Rdr">
+                                <rect key="frame" x="25" y="434" width="342" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8t-2P-ccC">
+                                <rect key="frame" x="25" y="670" width="342" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="r5a-is-ChY" kind="show" id="sPU-Y5-9A3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8EP-KA-MRd"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.92941176889999999" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WJa-ND-ErJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDe-ZW-bUR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2091" y="-27"/>
         </scene>
     </scenes>
     <resources>
         <image name="1dice" width="4096" height="4096"/>
         <image name="2dice" width="4096" height="4096"/>
         <image name="3dice" width="360" height="360"/>
+        <image name="btn01" width="331" height="160"/>
+        <image name="btn02" width="331" height="160"/>
+        <image name="logo" width="337" height="472"/>
+        <image name="losse" width="393" height="346"/>
+        <image name="note01" width="312" height="312"/>
+        <image name="note02" width="312" height="312"/>
+        <image name="note03" width="312" height="312"/>
+        <image name="note3" width="1024" height="1024"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

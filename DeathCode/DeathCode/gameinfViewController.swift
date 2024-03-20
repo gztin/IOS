@@ -18,15 +18,18 @@ class gameinfViewController: UIViewController {
     @IBOutlet var oneDice: UIButton!
     @IBOutlet var twoDice: UIButton!
     @IBOutlet var threeDice: UIButton!
+    @IBOutlet var beerPic: UIImageView!
     
     @IBOutlet var codeInf: UILabel!
     @IBOutlet var playagain: UIButton!
     @IBOutlet var MSG: UILabel!
-    @IBOutlet var gameResultMSG: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gameResultMSG.layer.opacity = 0
+        
+        hideBackButton()
+        beerPic.layer.opacity = 0
         oneDice.layer.borderWidth = 3
         twoDice.layer.borderWidth = 1
         threeDice.layer.borderWidth = 1
@@ -43,7 +46,7 @@ class gameinfViewController: UIViewController {
         codeInf.text = "0"
         MSG.layer.opacity = 0
         sumOfDice = 0
-        gameResultMSG.layer.opacity = 0
+        beerPic.layer.opacity = 0
         diceCode = Int.random(in: 50...100)
         gameover = false
     }
@@ -64,6 +67,10 @@ class gameinfViewController: UIViewController {
         twoDice.layer.borderWidth = 3
         threeDice.layer.borderWidth = 1
         twoDice.layer.borderColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0).cgColor
+    }
+    
+    func hideBackButton(){
+        navigationItem.hidesBackButton = true
     }
     
     @IBAction func playThree(_ sender: Any) {
@@ -91,8 +98,7 @@ class gameinfViewController: UIViewController {
                  
                  if sumOfDice >= diceCode {
                      AudioServicesPlaySystemSound(1521) // Actuate "Pop" feedback (strong boom)
-                     gameResultMSG.layer.opacity = 1
-                     gameResultMSG.text = "LOSE"
+                     beerPic.layer.opacity = 1
                      playagain.layer.opacity = 1
                      MSG.layer.opacity = 1
                      MSG.text = "Death Code is \(String(diceCode))"

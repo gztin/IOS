@@ -35,7 +35,9 @@ class setplayerViewController: UIViewController {
         AudioServicesPlaySystemSound(1519) // Actuate "Pop" feedback (strong boom)
         randomA.layer.borderWidth = 3
         randomB.layer.borderWidth = 0
-        randomA.layer.borderColor = UIColor.blue.cgColor
+        randomA.layer.cornerRadius = 20
+        randomB.layer.cornerRadius = 0
+        randomA.layer.borderColor = UIColor.black.cgColor
         diceNumber = Int.random(in: 1...50)
         playGame.layer.opacity = 1
         print("本次的死亡密碼是\(diceNumber)")
@@ -45,7 +47,9 @@ class setplayerViewController: UIViewController {
         AudioServicesPlaySystemSound(1519) // Actuate "Pop" feedback (strong boom)
         randomB.layer.borderWidth = 3
         randomA.layer.borderWidth = 0
-        randomB.layer.borderColor = UIColor.blue.cgColor
+        randomA.layer.cornerRadius = 0
+        randomB.layer.cornerRadius = 20
+        randomB.layer.borderColor = UIColor.black.cgColor
         diceNumber = Int.random(in: 50...100)
         playGame.layer.opacity = 1
         print("本次的死亡密碼是\(diceNumber)")
