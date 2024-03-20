@@ -1,6 +1,6 @@
 //
-//  ResultViewController.swift
-//  LifeNumber
+//  resultViewController.swift
+//  LifeNumber-part2
 //
 //  Created by 陳宗廷 on 2024/3/19.
 //
@@ -8,19 +8,16 @@
 import UIKit
 import WebKit
 
-class ResultViewController: UIViewController {
-    
+class resultViewController: UIViewController {
+
     @IBOutlet var webView: WKWebView!
     let lifeNumberNames = ["","開創","協調","創意","務實","自由","關懷","探究","權威","智慧"]
     var birthday: Date!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         updateUI()
         // Do any additional setup after loading the view.
     }
-    
     func updateUI() {
         let number = calculateLifeNumber(date: birthday)
         title = "\(number) \(lifeNumberNames[number])數"
@@ -45,7 +42,6 @@ class ResultViewController: UIViewController {
         } while sum > 9
             return sum
     }
-
     /*
     // MARK: - Navigation
 
